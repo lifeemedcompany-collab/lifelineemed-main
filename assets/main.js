@@ -10,7 +10,7 @@
     { label: "Training Programs", href: "training.html" },
     { label: "Publications", href: "publications.html" },
     { label: "Editorial Board", href: "editorial-board.html" },
-    { label: "Journals", href: "https://ajri-journal.vercel.app/", external: true },
+    { label: "Journals", href: "https://journal.lifelineemed.com/", external: true },
     { label: "Contact", href: "contact.html" }
   ];
 
@@ -85,10 +85,10 @@
         "</ul></div>" +
         '<div><h4>Publishing</h4><ul>' +
           '<li><a href="publications.html">Publications</a></li>' +
-          '<li><a href="https://ajri-journal.vercel.app/" target="_blank" rel="noopener">Journals (AJRI)</a></li>' +
+          '<li><a href="https://journal.lifelineemed.com/" target="_blank" rel="noopener">Journals (AJRI)</a></li>' +
           '<li><a href="research-areas.html">Research Areas</a></li>' +
           '<li><a href="editorial-board.html">Editorial Board</a></li>' +
-          '<li><a href="https://ajri-journal.vercel.app/" target="_blank" rel="noopener">Author Guidelines</a></li>' +
+          '<li><a href="https://journal.lifelineemed.com/" target="_blank" rel="noopener">Author Guidelines</a></li>' +
           '<li><a href="contact.html">Submit Manuscript</a></li>' +
         "</ul></div>" +
         '<div><h4>Legal</h4><ul>' +
