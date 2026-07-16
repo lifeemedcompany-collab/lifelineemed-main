@@ -463,8 +463,11 @@ body.has-hero .nav.scrolled{background:transparent;backdrop-filter:none;border-b
 @media(max-width:1260px){
   .nav__links{display:none}
   .nav__burger{display:block}
+  /* mobile nav = logo + burger only (no Submit Manuscript button) */
+  .nav__actions .btn--gold{display:none}
 }
 @media(max-width:720px){
+  :root{--nav-h:64px}
   .grid-3,.grid-2,.grid-4{grid-template-columns:1fr}
   .footer__top{grid-template-columns:1fr 1fr}
   /* compact horizontal logo */
@@ -472,9 +475,12 @@ body.has-hero .nav.scrolled{background:transparent;backdrop-filter:none;border-b
   .brand__mark{width:42px;height:42px;border-radius:11px}
   .brand__name b{font-size:13.5px}
   .brand__name span{font-size:7.5px;letter-spacing:1.4px;margin-top:1px}
-  /* small Submit Manuscript button */
-  .nav__actions{gap:8px}
-  .nav__actions .btn--gold{padding:8px 13px;font-size:12px;box-shadow:0 4px 12px rgba(194,145,47,.25)}
+  /* bigger burger tap target, pinned right */
+  .nav__actions{gap:8px;margin-left:auto}
+  .nav__burger{padding:10px}
+  /* roomier menu rows for easy tapping */
+  .nav__drawer a{padding:14px 4px;font-size:15px}
+  .nav__drawer .drawer-sub a{font-size:14px}
 
   /* ---- mobile polish ---- */
   section{padding:48px 0}
@@ -503,5 +509,10 @@ body.has-hero .nav.scrolled{background:transparent;backdrop-filter:none;border-b
 @media(max-width:480px){
   .stats{grid-template-columns:1fr 1fr}
   .footer__top{grid-template-columns:1fr}
+  /* stack CTAs full-width so they're easy to tap and never overflow */
+  .hero--dark .hero__cta,.hero__cta,.cta-band .row{flex-direction:column;align-items:stretch}
+  .hero--dark .hero__cta .btn,.hero__cta .btn,.cta-band .row .btn{width:100%}
+  .page-head h1{font-size:25px}
+  .brand__name span{display:none}
 }
 @media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}}
