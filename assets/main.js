@@ -73,7 +73,7 @@
           "<p>A US-based organization advancing scholarly publishing, healthcare innovation, scientific research, education, and international collaboration.</p>" +
           '<div class="contacts">' +
             '<a href="mailto:info@lifelineemed.com">info@lifelineemed.com</a>' +
-            "<span>910 Bergen Avenue, Suite 209,<br>Jersey City, NJ 07306</span>" +
+            "<span>342 Sip Ave, Bsmt,<br>Jersey City, New Jersey 07306</span>" +
           "</div>" +
         "</div>" +
         '<div><h4>Explore</h4><ul>' +

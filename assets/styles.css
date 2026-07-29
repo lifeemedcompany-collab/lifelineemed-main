@@ -247,6 +247,32 @@ h1,h2,h3{color:var(--navy);letter-spacing:-.4px;line-height:1.12}
 .member-card .info p{color:rgba(255,255,255,.82);font-size:12.5px;margin-top:8px;line-height:1.5}
 .member-card .info .badge{display:inline-block;margin-top:10px;font-size:10.5px;font-weight:700;color:#1a1205;
   background:linear-gradient(135deg,var(--gold-soft),var(--gold));padding:4px 10px;border-radius:999px}
+.member-card .info .mcard-mail{display:inline-block;margin-top:8px;font-size:12px;color:var(--gold-soft);font-weight:600;word-break:break-all}
+.member-card .info .mcard-mail:hover{color:#fff}
+
+/* ---------- Editor-in-Chief feature ---------- */
+.eic{display:grid;grid-template-columns:280px 1fr;gap:30px;align-items:start}
+.eic__photo{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:#0b2240}
+.eic__photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.eic__photo .badge{position:absolute;left:12px;bottom:12px;font-size:10.5px;font-weight:700;color:#1a1205;
+  background:linear-gradient(135deg,var(--gold-soft),var(--gold));padding:5px 11px;border-radius:999px}
+.eic__body h3{font-size:23px;color:var(--navy);line-height:1.2}
+.eic__body .role{color:var(--gold-soft);font-weight:700;font-size:13px;letter-spacing:.8px;text-transform:uppercase;margin-top:6px}
+.eic__affil{color:var(--muted);margin-top:14px;line-height:1.6;font-size:14.5px}
+.eic__contact{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:14px;font-size:14px}
+.eic__contact a{color:var(--blue);font-weight:600}
+.eic__contact a:hover{text-decoration:underline}
+.eic__contact .ph{color:var(--muted)}
+.eic__cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:22px;padding-top:20px;border-top:1px solid var(--border)}
+.eic__cols h4{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--gold-soft);margin-bottom:11px;font-weight:700}
+.eic__cols ul{list-style:none;display:grid;gap:7px}
+.eic__cols li{position:relative;padding-left:16px;color:var(--muted);font-size:13.5px;line-height:1.5}
+.eic__cols li::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+/* stronger, readable backdrop for the text-dense EIC panel */
+body.has-hero .container .panel.eic{background:rgba(8,14,26,.93);border-color:rgba(255,255,255,.15);backdrop-filter:blur(18px)}
+body.has-hero .eic .eic__affil,
+body.has-hero .eic .eic__cols li{color:rgba(255,255,255,.9)}
+body.has-hero .eic .eic__contact .ph{color:rgba(255,255,255,.82)}
 
 /* tag pills list */
 .pill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
@@ -469,6 +495,10 @@ body.has-hero .nav.scrolled{background:transparent;backdrop-filter:none;border-b
 @media(max-width:720px){
   :root{--nav-h:64px}
   .grid-3,.grid-2,.grid-4{grid-template-columns:1fr}
+  /* Editor-in-Chief block stacks on mobile */
+  .eic{grid-template-columns:1fr;gap:20px}
+  .eic__photo{width:100%;max-width:230px;margin:0 auto}
+  .eic__cols{grid-template-columns:1fr;gap:18px}
   .footer__top{grid-template-columns:1fr 1fr}
   /* compact horizontal logo */
   .brand{gap:8px}
