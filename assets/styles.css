@@ -270,8 +270,12 @@ h1,h2,h3{color:var(--navy);letter-spacing:-.4px;line-height:1.12}
 .eic__cols li::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
 /* stronger, readable backdrop for the text-dense EIC panel */
 body.has-hero .container .panel.eic{background:rgba(8,14,26,.93);border-color:rgba(255,255,255,.15);backdrop-filter:blur(18px)}
+.eic__bio{margin-top:14px;line-height:1.65;font-size:14.5px;color:var(--muted)}
+.eic__bio b{color:var(--navy)}
 body.has-hero .eic .eic__affil,
+body.has-hero .eic .eic__bio,
 body.has-hero .eic .eic__cols li{color:rgba(255,255,255,.9)}
+body.has-hero .eic .eic__bio b{color:#fff}
 body.has-hero .eic .eic__contact .ph{color:rgba(255,255,255,.82)}
 
 /* tag pills list */
