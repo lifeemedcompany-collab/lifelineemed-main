@@ -5,13 +5,12 @@
   var NAV_LINKS = [
     { label: "Home", href: "index.html" },
     { label: "About", href: "about.html" },
-    { label: "Our Services", href: "services.html" },
+    { label: "Clinical Research", href: "clinical-research.html" },
     { label: "Conferences & Events", href: "conferences.html" },
     { label: "Training Programs", href: "training.html" },
     { label: "Publications", href: "publications.html" },
     { label: "Editorial Board", href: "editorial-board.html" },
-    { label: "Journals", href: "https://journal.lifelineemed.com/", external: true },
-    { label: "Contact", href: "contact.html" }
+    { label: "Journals", href: "https://journal.lifelineemed.com/", external: true }
   ];
 
   var page = (location.pathname.split("/").pop() || "index.html");
@@ -48,7 +47,7 @@
         '<span class="brand__name"><b>Lifeline Emed</b><span>Companies</span></span></a>' +
       '<ul class="nav__links">' + NAV_LINKS.filter(function (l) { return l.href !== "index.html"; }).map(navItemHtml).join("") + "</ul>" +
       '<div class="nav__actions">' +
-        '<a class="btn btn--gold" href="contact.html">Submit Manuscript</a>' +
+        '<a class="btn btn--gold" href="about.html#contact">Submit Manuscript</a>' +
         '<button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
       "</div>" +
     "</div></nav>" +
@@ -60,7 +59,7 @@
         }
         return out;
       }).join("") +
-      '<a class="btn btn--gold" href="contact.html">Submit Manuscript</a>' +
+      '<a class="btn btn--gold" href="about.html#contact">Submit Manuscript</a>' +
     "</ul></div>";
 
   /* ---------- FOOTER ---------- */
@@ -79,7 +78,8 @@
         '<div><h4>Explore</h4><ul>' +
           '<li><a href="index.html">Home</a></li>' +
           '<li><a href="about.html">About Us</a></li>' +
-          '<li><a href="services.html">Our Services</a></li>' +
+          '<li><a href="about.html#services">Our Services</a></li>' +
+          '<li><a href="clinical-research.html">Clinical Research</a></li>' +
           '<li><a href="conferences.html">Conferences &amp; Events</a></li>' +
           '<li><a href="training.html">Training Programs</a></li>' +
         "</ul></div>" +
@@ -89,7 +89,7 @@
           '<li><a href="research-areas.html">Research Areas</a></li>' +
           '<li><a href="editorial-board.html">Editorial Board</a></li>' +
           '<li><a href="https://journal.lifelineemed.com/" target="_blank" rel="noopener">Author Guidelines</a></li>' +
-          '<li><a href="contact.html">Submit Manuscript</a></li>' +
+          '<li><a href="about.html#contact">Submit Manuscript</a></li>' +
         "</ul></div>" +
         '<div><h4>Legal</h4><ul>' +
           '<li><a href="privacy-policy.html">Privacy Policy</a></li>' +
