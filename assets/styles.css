@@ -490,10 +490,9 @@ body.has-hero .nav.scrolled{background:transparent;backdrop-filter:none;border-b
   .steps{grid-template-columns:1fr}
   .footer__top{grid-template-columns:1fr 1fr}
 }
-@media(max-width:1260px){
+@media(max-width:1180px){
   .nav__links{display:none}
   .nav__burger{display:block}
-  /* mobile nav = logo + burger only (no Submit Manuscript button) */
   .nav__actions .btn--gold{display:none}
 }
 @media(max-width:720px){
