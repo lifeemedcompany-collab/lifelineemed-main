@@ -282,6 +282,12 @@ body.has-hero .eic .eic__contact .ph{color:rgba(255,255,255,.82)}
 .pill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .pill-list span{font-size:13px;background:var(--surface);border:1px solid var(--border);color:var(--navy);padding:6px 12px;border-radius:999px}
 
+/* ---------- Clinical research imagery ---------- */
+.feature-img{width:100%;display:block;object-fit:cover;border-radius:16px;box-shadow:var(--shadow-lg);max-height:460px}
+.img-gallery{gap:18px}
+.img-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:14px;box-shadow:var(--shadow);transition:transform .2s ease}
+.img-gallery img:hover{transform:translateY(-4px)}
+
 /* CTA band */
 .cta-band{background:linear-gradient(135deg,var(--navy-700),var(--navy));color:#fff;border-radius:24px;
   padding:clamp(36px,5vw,60px);text-align:center;box-shadow:var(--shadow-lg)}
@@ -393,8 +399,11 @@ body.has-hero .section-head p,
 body.has-hero .section-head .lead{color:rgba(255,255,255,.8)}
 body.has-hero .feature h4{color:#fff}
 body.has-hero .feature p{color:rgba(255,255,255,.78)}
-/* About page: dim the bright Times Square background */
-body[data-fixed-bg^="assets/heroes/about"] .hero-fixed-bg{filter:saturate(.82) brightness(.72) contrast(1.02)}
+/* About page: heavily dim the bright, busy Times Square background so the
+   text-dense merged content (services, steps, contact form) stays readable */
+body[data-fixed-bg^="assets/heroes/about"] .hero-fixed-bg{filter:saturate(.7) brightness(.42) contrast(1.02)}
+body[data-fixed-bg^="assets/heroes/about"] .hero-fixed-bg::after{background:
+  linear-gradient(180deg,rgba(6,11,22,.74),rgba(6,11,22,.84))}
 
 /* inner pages with a fixed bg: page header goes transparent — the fixed layer shows through */
 body.has-hero .page-head--photo{background-image:none !important;background-color:transparent;border-bottom:none;
@@ -546,6 +555,6 @@ body.has-hero .nav.scrolled{background:transparent;backdrop-filter:none;border-b
   .hero--dark .hero__cta,.hero__cta,.cta-band .row{flex-direction:column;align-items:stretch}
   .hero--dark .hero__cta .btn,.hero__cta .btn,.cta-band .row .btn{width:100%}
   .page-head h1{font-size:25px}
-  .brand__name span{display:none}
+  .brand__name span{display:block;font-size:7px;letter-spacing:1.2px}
 }
 @media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}}
