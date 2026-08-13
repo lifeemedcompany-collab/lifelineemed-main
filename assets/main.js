@@ -5,7 +5,7 @@
   var NAV_LINKS = [
     { label: "Home", href: "index.html" },
     { label: "About", href: "about.html" },
-    { label: "Clinical Research", href: "clinical-research.html" },
+    { label: "Clinical Trials", href: "clinical-trials.html" },
     { label: "Conferences & Events", href: "conferences.html" },
     { label: "Training Programs", href: "training.html" },
     { label: "Publications", href: "publications.html" },
@@ -79,7 +79,7 @@
           '<li><a href="index.html">Home</a></li>' +
           '<li><a href="about.html">About Us</a></li>' +
           '<li><a href="about.html#services">Our Services</a></li>' +
-          '<li><a href="clinical-research.html">Clinical Research</a></li>' +
+          '<li><a href="clinical-trials.html">Clinical Trials</a></li>' +
           '<li><a href="conferences.html">Conferences &amp; Events</a></li>' +
           '<li><a href="training.html">Training Programs</a></li>' +
         "</ul></div>" +
